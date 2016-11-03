@@ -17,15 +17,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-var loop = require('node-while-loop');
- 
-var i = 1;
-loop.while(function () {
-    return i * i < 10;
-}, function () {
-    console.log(i);
-    i++;
-});
+
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
