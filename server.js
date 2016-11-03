@@ -7,11 +7,6 @@ app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-  var x=0;
-do{
-    alert("Hello");
-}while(x!=5);
-
 });
 
 app.get('/ui/style.css', function (req, res) {
