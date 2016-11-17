@@ -1,7 +1,7 @@
 console.log('Loaded!');
 
-var counter = 10;
+var count = 10;
 app.get('/counter', function (req, res) {
-  counter = counter + 1;    
-  res.send(counter.toString());
+  count = count + 1;    
+  res.send(count.toString());
 });
