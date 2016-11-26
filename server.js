@@ -895,6 +895,19 @@ app.get('/images/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', req.params.fileName));
 });
 
+//about-profile
+app.get('/about/profile', function (req, res) {
+	res.send(createProfile());
+});
+
+app.get('/about/images/:fileName', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', req.params.fileName));
+});
+
+app.get('/about/css/:fileName', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/css', req.params.fileName));
+});
+
 
 app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
