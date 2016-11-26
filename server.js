@@ -39,6 +39,460 @@ app.get('/test', function (req, res) {
 });
 
 
+//Func for Portfolio
+function createProfile (){
+	var Profile = `
+<!doctype html>
+<html>
+<head>
+<title>Profile</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap Css-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style-profile.css">
+
+  <!-- Bootstrap Js -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!--Font_awesome CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#menu").click(function(){
+        $(".menu").toggle();
+    });
+});
+</script>
+
+
+</head>
+
+<body>
+
+<!--Mobile header-->
+<section class="header">
+<p><a href="#" id="menu" style="font-size:16px;color:#FFF;"><i class="fa fa-bars" aria-hidden="true"></i></a><span style="float:right;">Header</span> </p>
+
+</section>
+
+<!--Section starts here-->
+<section class="main">
+	<div class="col-lg-12 col-md-12 col-sm-12 home-bg">
+		<div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <div align="center" class="pad-top-bot">
+                <img src="images/jayasurya.jpg" style="height:200px;width:200px;border-radius:100px;border-width:thick;border:5px solid #999;">
+                <h2 style="padding-top:10px;padding-bottom:10px;">I'M <font style="color:#1ab5d3;">JAYASURYA SEETHARAMAN</font></h2>
+                <h4>Hello. I'm a Developer</h4>
+                <p style="border-bottom:1px solid #FFF;border-bottom-width: thick;width: 20%;"></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit <br>
+Etiam eu cursus lectus. In ultrice s leo sed leo bibendum eu interdum urna luctus.</p>
+				<div class="home-social">
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>                
+                </div>
+
+             </div>
+
+            </div>
+            <div id="profile" class="tab-pane fade">
+              
+              <div class="profile" align="center">
+              <h1>My Profile</h1>
+              <p style="border-bottom:1px solid #1ab5d3;"></p>
+              <div class="col-lg-offset-3 col-lg-6 col-lg-offset-3 col-md-offset-1 col-md-10 col-md-offset-1 col-sm-12">
+              	<div class="table-responsive">
+                	<table class="table">
+                    	<tr>
+                        	<td>Name</td><td>:</td><td>Jayasurya Seetharaman</td>
+                        </tr>
+                        <tr>
+                        	<td>D.O.B</td><td>:</td><td>06-04-1996</td>
+                        </tr>
+                        <tr>
+                        	<td>Age</td><td>:</td><td>20</td>
+                        </tr>
+                        <tr>
+                        	<td>Marital Status</td><td>:</td><td>Unmarried</td>
+                        </tr>
+                        <tr>
+                        	<td>Profession</td><td>:</td><td>Student</td>
+                        </tr>
+                        <tr>
+                        	<td>Mobile.No</td><td>:</td><td>9894685416</td>
+                        </tr>
+                        <tr>
+                        	<td>Email</td><td>:</td><td>jayasuryas06@gmail.com</td>
+                        </tr>
+                        <tr>
+                        	<td>Address</td><td>:</td><td>60,Kumaran Nagar, Ondipur,<br>Coimbatore-641 016,<br>Tamilnadu.</td>
+                        </tr>
+                    </table>
+
+                </div>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+            <!--Resume starts here-->
+            <div id="resume" class="tab-pane fade resume-bg">
+            <div class="container-fluid">
+              <h2 class="resume-head">Resume - Personal Info</h2>
+             <div align="center"> <p style="border-bottom:1px solid #1ab5d3;width:10%;"></p></div>
+             
+             <div class="resume-info">
+             	
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h3>Education</h3>
+                <p style="border-bottom:1px solid #1ab5d3;border-bottom-width:thick;width:10%;"></p>
+                
+				<h4>SSLC<span class="year"><strong>2000-2011</strong></span></h4>
+                <p style="border-bottom:1px solid #1ab5d3;"></p>
+                <h5>Name of School</h5>
+                <div class="schl">
+                    <h4>Rajalakshmi Mills High School</h4>
+                    <p>Coimbatore</p>
+                </div>
+                
+                <h4>HSLC<span class="year"><strong>2011-2013</strong></span></h4>
+                <p style="border-bottom:1px solid #1ab5d3;"></p>
+                <h5>Name of School</h5>
+                <div class="schl">                
+                    <h4>RK.Sree Rangammal Higher Secondary School</h4>
+                    <p>Coimbatore</p>
+                </div>
+                
+                <h4>MSC.SOFTWARE SYSTEMS<span class="year"><strong>IV Year in Process</strong></span></h4>
+                <p style="border-bottom:1px solid #1ab5d3;"></p>
+                <h5>Name of Institution</h5>
+                <div class="schl">
+                    <h4>Sri krsihna Arts and Science College</h4>
+                    <p>Coimbatore</p>
+                </div>
+                
+                <h3 style="padding-top:10px;">Industrial Exposure</h3>
+                <p style="border-bottom:1px solid #1ab5d3;border-bottom-width:thick;width:10%;"></p>
+                
+                <h4>WIPRO TECHNOLOGIES<span class="year"><strong>Mar / 2015</strong></span></h4>
+                <p style="border-bottom:1px solid #1ab5d3;"></p>
+                <div class="cmpny">
+                    <h4>Undergone 1 day of Industrial Visit at WIPRO TECHNOLOGIES in <i>Bangalore</i> on 04.03.2015</h4>
+                </div>
+                
+                <h4>REFINEMENT SOFTWARE SOLUTIONS<span class="year"><strong>May / 2015</strong></span></h4>
+                <p style="border-bottom:1px solid #1ab5d3;"></p>
+                <div class="cmpny">
+                    <h4>Undergone 15 days of In-plant Training at REFINEMENT SOFTWARE SOLUTIONS in <i>Coimbatore</i> from 15.05.2015 to 30.05.20155</h4>
+                </div>
+
+                <h4>123COIMBATORE.COM<span class="year"><strong> May - Oct , 2016. </strong></span></h4>
+                <p style="border-bottom:1px solid #1ab5d3;"></p>
+                <div class="cmpny">
+                    <h4>Undergone 6 Months of Internship Training at 123COIMBATORE.COM in <i>Coimbatore</i> from 1.05.2016 to 30.10.2016</h4>
+                    <h4>Also I had been working there as a<strong> Php Developer</strong>. List of Projects I have been completed in 
+                    <i><a href="">123coimbatore</a></i> can be viewed in Portfolio. </h4>
+                </div>
+
+                
+              </div>
+                
+                
+                
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h3>Percentage / CGPA</h3>
+                <p style="border-bottom:1px solid #1ab5d3;border-bottom-width:thick;width:10%;"></p>
+                
+                <div class="bar clearfix" data-percent="95%">
+                    <div class="bar-title"><span>SSLC</span></div>
+                    <div class="bar-bar" style="width: 90%;"></div>
+                    <div class="bar-percent">90%</div>
+                </div>
+
+				<div class="bar clearfix" data-percent="95%">
+                    <div class="bar-title"><span>HSLC</span></div>
+                    <div class="bar-bar" style="width: 74%;"></div>
+                    <div class="bar-percent">74%</div>
+                </div>
+                
+				<div class="bar clearfix" data-percent="95%">
+                    <div class="bar-title"><span>MSC.SS</span></div>
+                    <div class="bar-bar" style="width: 76%;"></div>
+                    <div class="bar-percent">7.6</div>
+                </div>
+                
+                <h3 style="padding-top:10px;">Technical Skills</h3>
+                <p style="border-bottom:1px solid #1ab5d3;border-bottom-width:thick;width:10%;"></p>
+
+				<div class="bar clearfix" data-percent="95%">
+                    <div class="bar-title"><span>PHOTOSHOP CS6</span></div>
+                    <div class="bar-bar" style="width: 75%;"></div>
+                    <div class="bar-percent">75%</div>
+                </div>
+                
+				<div class="bar clearfix" data-percent="95%">
+                    <div class="bar-title"><span>HTML 5</span></div>
+                    <div class="bar-bar" style="width: 70%;"></div>
+                    <div class="bar-percent">70%</div>
+                </div>
+
+				<div class="bar clearfix" data-percent="95%">
+                    <div class="bar-title"><span>CSS</span></div>
+                    <div class="bar-bar" style="width: 60%;"></div>
+                    <div class="bar-percent">60%</div>
+                </div>
+
+				<div class="bar clearfix">
+                    <div class="bar-title"><span>PHP</span></div>
+                    <div class="bar-bar" style="width: 60%;"></div>
+                    <div class="bar-percent">60%</div>
+                </div>
+
+				<div class="bar clearfix" data-percent="95%">
+                    <div class="bar-title"><span>JAVASCRIPT</span></div>
+                    <div class="bar-bar" style="width: 40%;"></div>
+                    <div class="bar-percent">40%</div>
+                </div>
+
+				<div class="bar clearfix" data-percent="95%">
+                    <div class="bar-title"><span>MSC.SS</span></div>
+                    <div class="bar-bar" style="width: 35%;"></div>
+                    <div class="bar-percent">35%</div>
+                </div>
+
+				<div class="bar clearfix" data-percent="95%">
+                    <div class="bar-title"><span>NODE JS</span></div>
+                    <div class="bar-bar" style="width: 30%;"></div>
+                    <div class="bar-percent">30%</div>
+                </div>
+
+                <h3 style="padding-top:10px;">Area Of Interest</h3>
+                <p style="border-bottom:1px solid #1ab5d3;border-bottom-width:thick;width:10%;"></p>
+                
+				<div class="bar clearfix" data-percent="95%">
+                    <div class="bar-title"><span>WEB DESIGNING</span></div>
+                    <div class="bar-bar" style="width: 60%;"></div>
+                    <div class="bar-percent">60%</div>
+                </div>
+
+				<div class="bar clearfix" data-percent="95%">
+                    <div class="bar-title"><span>DEVELOPING / WEB DEVELOPING</span></div>
+                    <div class="bar-bar" style="width: 100%;"></div>
+                    <div class="bar-percent">100%</div>
+                </div>
+
+				<div class="bar clearfix" data-percent="95%">
+                    <div class="bar-title"><span>MOBILE APP DEVELOPING</span></div>
+                    <div class="bar-bar" style="width: 70%;"></div>
+                    <div class="bar-percent">70%</div>
+                </div>
+                
+                <h3 style="padding-top:10px;">Achievements</h3>
+                <p style="border-bottom:1px solid #1ab5d3;border-bottom-width:thick;width:10%;"></p>
+				
+                <h3 style="font-size:17px !important;">Journal Publication</h3>
+                
+                <div class="cmpny">
+                    <h4>1.&nbsp;Latest Technology in Medical Field.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISSN.NO: 0976-5697</h4>
+                    <h4>2.&nbsp;Web Intrusion Using Advanced SQL Injector and Countermeasures.
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISSN.NO:2278-1021</h4>
+                </div>
+                
+                
+              </div>
+                
+             </div>
+             </div>
+            </div>
+            <!--Resume ends here-->
+            
+            <div id="portfolio" class="tab-pane fade portfolio-bg">
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
+                      <article>
+                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                      </article>  
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
+                      <article>
+                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                      </article>  
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
+                      <article>
+                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                      </article>  
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
+                      <article>
+                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                      </article>  
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
+                      <article>
+                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                      </article>  
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
+                      <article>
+                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                      </article>  
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
+                      <article>
+                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                      </article>  
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
+                      <article>
+                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                      </article>  
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
+                      <article>
+                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                      </article>  
+                </div>
+
+             </div>
+            
+            <div id="blog" class="tab-pane fade blog-bg">
+
+              	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-ryt-pad">
+                  <article>
+                	<img src="images/blog.jpg" class="img-responsive">
+                    <div class="post">
+                    <h4><a href="#">Awesome Post Title</a></h4>
+                    <p style="color:#1ab5d3;">Category - Feb,2016.</p>
+                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                    <a href="#">view more</a>
+                    </div>
+                  </article>  
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-6 no-ryt-pad">
+                  <article>
+                	<img src="images/blog.jpg" class="img-responsive">
+                    <div class="post">
+                    <h4><a href="#">Awesome Post Title</a></h4>
+                    <p style="color:#1ab5d3;">Category - Feb,2016.</p>
+                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                    <a href="#">view more</a>
+                    </div>
+                  </article>  
+
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-6 no-ryt-pad">
+                  <article>
+                	<img src="images/blog.jpg" class="img-responsive">
+                    <div class="post">
+                    <h4><a href="#">Awesome Post Title</a></h4>
+                    <p style="color:#1ab5d3;">Category - Feb,2016.</p>
+                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                    <a href="#">view more</a>
+                    </div>
+                    
+                  </article>  
+
+                </div>
+
+              	<div class="col-lg-4 col-md-4 col-sm-6 no-ryt-pad">
+                  <article>
+                	<img src="images/blog.jpg" class="img-responsive">
+                    <div class="post">
+                    <h4><a href="#">Awesome Post Title</a></h4>
+                    <p style="color:#337ab7;">Category - Feb,2016.</p>
+                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                    </div>
+                  </article>  
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-6 no-ryt-pad">
+                  <article>
+                	<img src="images/blog.jpg" class="img-responsive">
+                    <div class="post">
+                    <h4><a href="#">Awesome Post Title</a></h4>
+                    <p style="color:#337ab7;">Category - Feb,2016.</p>
+                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                    </div>
+                  </article>  
+
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-6 no-ryt-pad">
+                  <article>
+                	<img src="images/blog.jpg" class="img-responsive">
+                    <div class="post">
+                    <h4><a href="#">Awesome Post Title</a></h4>
+                    <p style="color:#337ab7;">Category - Feb,2016.</p>
+                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                    </div>
+                    
+                  </article>  
+
+                </div>
+              
+            </div>
+            
+	  </div>
+
+    </div>
+</section>
+<!--Section ends here-->
+
+<!--Side menu starts here-->
+<div class="menu">
+<div align="center" class="pad-top-bot">
+    <img src="images/profile.jpg" class="img-circle">
+    <p style="padding-top:10px;padding-bottom:10px;">Jayasurya Seetharaman</p>
+    <p style="border-bottom:1px solid #1ab5d3;border-bottom-width: thin;width: 40%;"></p>
+</div>
+<ul class="nav nav-pills nav-stacked">
+    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+    <li><a data-toggle="pill" href="#profile">Profile</a></li>
+    <li><a data-toggle="pill" href="#resume">Resume</a></li>
+    <li><a data-toggle="pill" href="#portfolio">Porfolio</a></li>
+    <li><a data-toggle="pill" href="#blog">Blog</a></li>
+</ul>
+
+<div class="social">
+    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+</div>
+
+<div align="center">
+    <p style="padding:0px;border-bottom:1px solid #1ab5d3;border-bottom-width: thin;width: 40%;"></p>
+    <p><small>Designed by Jayasurya</small></p>
+</div>
+
+</div>
+<!--Side menu ends here-->
+
+</body>
+</html>
+
+	`;
+	return Profile;
+}
+
+
 //Func For Category Page
 function createCategory (){
 	var catTemplate =`
