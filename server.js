@@ -33,7 +33,7 @@ app.get('/test', function (req, res) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
-          res.send('Success');
+          res.send(JSON.stringify(result));
       }
    });
 });
