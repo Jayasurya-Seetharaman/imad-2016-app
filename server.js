@@ -15,7 +15,6 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 
-
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
@@ -23,6 +22,7 @@ app.use(session({
     secret: 'someRandomSecretValue',
     cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
 }));
+
 
 var pool = new Pool(config);
 
