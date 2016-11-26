@@ -433,6 +433,11 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+app.get('/css/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/css', 'style.css'));
+});
+
+
 app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
 });
