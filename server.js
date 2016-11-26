@@ -12,7 +12,7 @@ var config = {
     database: 'jayasurya-seetharaman',
     host: 'db.imad.hasura-app.io',
     port: '5432',
-    password: process.env.DB_PASSWORD
+    password: 'db-jayasurya-seetharaman-34291'
 };
 
 var app = express();
