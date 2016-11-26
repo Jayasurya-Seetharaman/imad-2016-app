@@ -20,7 +20,7 @@
 }
 
 .home-bg{
-	background:url(../images/bg.jpg) no-repeat;
+	background:url(bg.jpg) no-repeat;
 	background-size:cover;
 	min-height:100%;
 	position:absolute;
