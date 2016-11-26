@@ -1,19 +1,283 @@
 <!doctype html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
+<head>
+<meta charset="utf-8">
+<title>My Blog - 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--Css-->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="css/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="css/owl.theme.css">
+ 
+<!--  jQuery 1.7+  -->
+<script src="js/jquery-1.9.1.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="js/owl.carousel.js"></script>
+
+<!--Font_awesome CDN-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body{
+	background-color:#F5F5F5;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!--Header Starts-->
+<section class="header">
+	<div class="container-fluid">
+		<h1 class="text-center">My Blog</h1>
+    </div>
+</section>
+<!--Header Ends -->
+<br>
+<!--Banner Starts Here-->
+<div class="container">
+	<div class="banner">
+    	
+        <figure>
+        	<img width="640" height="424" src="images/digital_love_hires-1024x678.jpg">
+            <figcaption>
+            	<div class="banner-category">
+                	<a href="#">Travel</a>
+                </div>
+            	<div class="banner-title">
+                	<a href="#">Artciel heading will Appear here</a>
+                </div>
+            </figcaption>
+        </figure>
+        
+        <figure>
+        	<img width="640" height="424" src="images/journey_begins_high_res-1024x678.jpg">
+            <figcaption>
+            	<div class="banner-category">
+                	<a href="#">Travel</a>
+                </div>
+            	<div class="banner-title">
+                	<a href="#"><h2>Artciel heading will Appear here</h2></a>
+                </div>
+            </figcaption>
+        </figure>
+        
+        <figure>
+        	<img width="640" height="424" src="images/song_writing_hires-1024x678.jpg">
+            <figcaption>
+            	<div class="banner-category">
+                	<a href="#">Travel</a>
+                </div>
+            	<div class="banner-title">
+                	<a href="#"><h2>Artciel heading will Appear here</h2></a>
+                </div>
+            </figcaption>
+        </figure>
+        
+    </div>
+    
+</div>
+<br><br>
+<!--Banner Ends Here-->
+
+
+<!--Slider Div Starts Here-->
+<div class="container">
+        <div id="owl-demo">
+          <div class="item">
+          	<img src="images/one.jpg" class="img-responsive">
+            <div align="center"><div class="slide-category">Travel</div>
+            <div class="slide-content"><a href="#"> Your Content </a></div></div>
+          </div>
+          <div class="item">
+          	<img src="images/one.jpg" class="img-responsive">
+            <div align="center"><div class="slide-category">Travel</div>
+            <div class="slide-content"><a href="#"> Your Content </a></div></div>
+          </div>
+          <div class="item">
+          	<img src="images/one.jpg" class="img-responsive">
+            <div align="center"><div class="slide-category">Travel</div>
+            <div class="slide-content"><a href="#"> Your Content </a></div></div>
+          </div>
+          <div class="item">
+          	<img src="images/one.jpg" class="img-responsive">
+            <div align="center"><div class="slide-category">Travel</div>
+            <div class="slide-content"><a href="#"> Your Content </a></div></div>
+          </div>
+          <div class="item">
+          	<img src="images/one.jpg" class="img-responsive">
+            <div align="center"><div class="slide-category">Travel</div>
+            <div class="slide-content"><a href="#"> Your Content </a></div></div>
+          </div>
+          <div class="item">
+          	<img src="images/one.jpg" class="img-responsive">
+            <div align="center"><div class="slide-category">Travel</div>
+            <div class="slide-content"><a href="#"> Your Content </a></div></div>
+          </div>
+          <div class="item">
+          	<img src="images/one.jpg" class="img-responsive">
+            <div align="center"><div class="slide-category">Travel</div>
+            <div class="slide-content"><a href="#"> Your Content</a> </div></div>
+          </div>
+     </div>
+
+
+    <style>
+    #owl-demo .item{
+        margin: 3px;
+    }
+    #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    </style>
+
+
+    <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+        autoPlay: 3000,
+        items : 4,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+
+    });
+    </script>
+</div>
+<!--Slider Div Ends Here-->
+<br>
+
+<!--Container Starts-->
+<div class="container">
+	<div class="row">
+    <!--COl-9 Starts Here-->
+    	
+          
+          
+          <div id="articles">
+          
+          </div>
+
+        
+  <!--Col-3 Starts Here-->
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pad_bot">
+        	<!--<h3 class="title no_top_margin"><div class="line-2"></div><span class="title_text">About Me</span><div class="line-3">-->
+            <h3 class="title no_top_margin">About Me</h3>
+                
+            
+                <img src="images/two.jpg" class="img-responsive">
+            <div class="abt_me">
+            <p>Morbi nec aliquam augue. Vestibulum molestie aliquet sem non rhoncus. Ut hendrerit, magna a vulputate dignissim, orci lorem consectetur eros, eget tempus ligula sem ac tellus</p>
+            </div>
+            
+            <!--Login-->
+            <div id="login_area">
+                <center>Loading login status...</center>
+            </div>
+
+            
+            
+            <!-- Popular Posts Starts Here-->
+            	
+             <div id="latest-posts">
+             </div>
+                
+            <!--Popular Posts Ends Here-->
+            
+            <!--Tags Starts Here-->
+            <div id="tag">
+            </div>
+            <!--Tags Ends Here-->
+            
         </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! This is Varun & Surya.<br>
-            Checking !
+    </div>
+</div>
+<!--Container Ends-->
+
+<!--Footer Starts Here-->
+<div class="container-fluid footer">
+	<div class="container">
+    	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        	<h2 class="footer_title">About Me</h2>
+            
+            <div class="col-lg-12 col-md-12 col-sm-12" align="center">
+            	<img src="images/profile.jpg" class="img-rounded">
+                <p>Jayasurya</p>
+            </div>
+            
         </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-         
-    </body>
+ 
+        <div id="tag-foot">
+        </div>
+        
+        <!--Popular Posts STarts Here-->
+        <div id="pop-post">
+        </div>
+        <!--Popular posts ends Here-->
+        
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        	<h2 class="footer_title">Get In Touch</h2>
+            <a class="twitter-timeline" data-width="100%" data-height="250" href="https://twitter.com/s_jayasurya">Tweets by s_jayasurya</a> <script async src="//<strong>platform.twitter.com/widgets.js</strong>" charset="utf-8"></script>
+          
+          
+               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+        </div>
+    </div>
+
+</div>
+
+<div class="info-social">
+	<div align="center">
+            	<div class="info-social">
+                	<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-user" aria-hidden="true" title="View Profile"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+</a>
+    </div>
+</div>
+<!--Footer Ends Here-->
+
+<!--Footer Info Stats Here-->
+
+<div class="container-fluid footer-info">
+	
+    	<div class="container" align="center">
+            
+            	<p>&copy; All Rights Reserved. Designed & Developed By Jayasurya.</p>
+            </div>
+        </div>    
+    
+</div>
+<!--Footer Info Ends Here-->
+
+<!--Test-->
+<div class="container">
+	<div class="col-lg-12">
+    	<div align="center" id="">
+        
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/ui/main.js"></script>
+</body>
 </html>
