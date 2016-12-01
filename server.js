@@ -918,6 +918,10 @@ app.get('/images/php.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'php.jpg'));
 });
 
+app.get('/images/asp.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'asp.jpg'));
+});
+
 
 //about-profile
 app.get('/about/profile', function (req, res) {
