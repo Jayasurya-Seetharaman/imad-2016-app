@@ -938,6 +938,9 @@ app.get('/images/js.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'js.jpg'));
 });
 
+app.get('/images/android.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'android.jpg'));
+});
 
 
 
