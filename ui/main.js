@@ -409,6 +409,7 @@ function loadCategory () {
 				<a href="/articles/${articleData[i].title}/${articleData[i].category}"><p style="text-align:right !important;">view more</p></a>
             </div>
             </div>
+            <br>
           
           </div>				   
           
