@@ -405,11 +405,11 @@ function loadCategory () {
             
             <!--Head- Article- Ends-->
             <div class="article_section">
-            	<p>${articleData[i].content.substring(3, 150)}</p>
+            	<p>${articleData[i].content.substring(3, 200)}</p>
 				<a href="/articles/${articleData[i].title}/${articleData[i].category}"><p style="text-align:right !important;">view more</p></a>
             </div>
             </div>
-          <div class="clearfix"></div>  
+          
           </div>				   
           
 				   `;
