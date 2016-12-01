@@ -934,6 +934,11 @@ app.get('/images/html.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'html.jpg'));
 });
 
+app.get('/images/js.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'js.jpg'));
+});
+
+
 //about-profile
 app.get('/about/profile', function (req, res) {
 	res.send(createProfile());
