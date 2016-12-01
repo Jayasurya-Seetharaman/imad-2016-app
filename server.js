@@ -906,6 +906,11 @@ app.get('/images/flask.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'flask.jpg'));
 });
 
+app.get('/images/laravel.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'laravel.jpg'));
+});
+
+
 //about-profile
 app.get('/about/profile', function (req, res) {
 	res.send(createProfile());
