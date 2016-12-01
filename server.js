@@ -38,11 +38,6 @@ app.get('/test', function (req, res) {
    });
 });
 
-//Func for profile-blog
-function createBlog(){
-    var blog = ``;
-    return blog;
-}
 
 //Func for Portfolio
 function createProfile (){
@@ -381,80 +376,8 @@ Etiam eu cursus lectus. In ultrice s leo sed leo bibendum eu interdum urna luctu
             
             <div id="blog" class="tab-pane fade blog-bg">
 
-              	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-ryt-pad">
-                  <article>
-                	<img src="images/blog.jpg" class="img-responsive">
-                    <div class="post">
-                    <h4><a href="#">Awesome Post Title</a></h4>
-                    <p style="color:#1ab5d3;">Category - Feb,2016.</p>
-                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
-                    <a href="#">view more</a>
-                    </div>
-                  </article>  
-                </div>
-                
-                <div class="col-lg-4 col-md-4 col-sm-6 no-ryt-pad">
-                  <article>
-                	<img src="images/blog.jpg" class="img-responsive">
-                    <div class="post">
-                    <h4><a href="#">Awesome Post Title</a></h4>
-                    <p style="color:#1ab5d3;">Category - Feb,2016.</p>
-                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
-                    <a href="#">view more</a>
-                    </div>
-                  </article>  
-
-                </div>
-                
-                <div class="col-lg-4 col-md-4 col-sm-6 no-ryt-pad">
-                  <article>
-                	<img src="images/blog.jpg" class="img-responsive">
-                    <div class="post">
-                    <h4><a href="#">Awesome Post Title</a></h4>
-                    <p style="color:#1ab5d3;">Category - Feb,2016.</p>
-                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
-                    <a href="#">view more</a>
-                    </div>
-                    
-                  </article>  
-
-                </div>
-
-              	<div class="col-lg-4 col-md-4 col-sm-6 no-ryt-pad">
-                  <article>
-                	<img src="images/blog.jpg" class="img-responsive">
-                    <div class="post">
-                    <h4><a href="#">Awesome Post Title</a></h4>
-                    <p style="color:#337ab7;">Category - Feb,2016.</p>
-                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
-                    </div>
-                  </article>  
-                </div>
-                
-                <div class="col-lg-4 col-md-4 col-sm-6 no-ryt-pad">
-                  <article>
-                	<img src="images/blog.jpg" class="img-responsive">
-                    <div class="post">
-                    <h4><a href="#">Awesome Post Title</a></h4>
-                    <p style="color:#337ab7;">Category - Feb,2016.</p>
-                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
-                    </div>
-                  </article>  
-
-                </div>
-                
-                <div class="col-lg-4 col-md-4 col-sm-6 no-ryt-pad">
-                  <article>
-                	<img src="images/blog.jpg" class="img-responsive">
-                    <div class="post">
-                    <h4><a href="#">Awesome Post Title</a></h4>
-                    <p style="color:#337ab7;">Category - Feb,2016.</p>
-                    <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
-                    </div>
-                    
-                  </article>  
-
-                </div>
+              	<div id="blog">
+              	</div>
               
             </div>
             
@@ -492,7 +415,7 @@ Etiam eu cursus lectus. In ultrice s leo sed leo bibendum eu interdum urna luctu
 
 </div>
 <!--Side menu ends here-->
-
+<script type="text/javascript" src="/ui/main.js"></script>
 </body>
 </html>
 
@@ -1026,6 +949,17 @@ app.get('/articles/:file/images/:fileName', function (req, res) {
 
 
 var pool = new Pool(config);
+
+//profile-blog
+app.get('/blog', function (req, res) {
+  	pool.query("SELECT * FROM article ORDER BY RANDOM()", function (err, result) {
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          res.send(JSON.stringify(result.rows));
+      }
+   });
+});
 
 
 //Tags-Category
