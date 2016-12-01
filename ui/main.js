@@ -448,7 +448,7 @@ function latestBlog () {
                   <article>
                 	<img src="${articleData[i].img}" class="img-responsive">
                     <div class="post">
-                    <h4><a href="#">${articleData[i].heading}</a></h4>
+                    <h4><a href="/articles/${articleData[i].title}/${articleData[i].category}">${articleData[i].heading}</a></h4>
                     <p style="color:#1ab5d3;">${articleData[i].category} - Feb,2016.</p>
                     <p>${articleData[i].content.substring(3, 150)}</p>
                     <a href="/articles/${articleData[i].title}/${articleData[i].category}">view more</a>
