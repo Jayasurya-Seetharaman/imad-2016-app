@@ -429,6 +429,46 @@ function loadCategory () {
 }
 
 
+//Fun for latest-Blog
+function latestBlog () {
+        // Check if the user is already logged in
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            var articles = document.getElementById('blog');
+            if (request.status === 200) {
+				var content = '';
+                var articleData = JSON.parse(this.responseText);
+				
+                for (var i=0; i< articleData.length; i++) {
+                   
+				  content += `   
+				  
+				  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-ryt-pad">
+                  <article>
+                	<img src="${articleData[i].img}" class="img-responsive">
+                    <div class="post">
+                    <h4><a href="#">${articleData[i].heading}</a></h4>
+                    <p style="color:#1ab5d3;">${articleData[i].category} - Feb,2016.</p>
+                    <p>${articleData[i].content.substring(3, 150)}</p>
+                    <a href="#">view more</a>
+                    </div>
+                  </article>  
+			     </div>  `;
+				
+                }
+//				  content += "</div>";
+                articles.innerHTML = content;
+            } else {
+                articles.innerHTML('Oops! Could not load all articles!')
+            }
+        }
+    };
+    
+    request.open('GET', '/blog', true);
+    request.send(null);
+}
+
 
 
 //Calling loadArticles()
@@ -455,3 +495,5 @@ loadPoparticle();
 //loadCategory
 loadCategory();
 
+//latestBlog
+latestBlog();
