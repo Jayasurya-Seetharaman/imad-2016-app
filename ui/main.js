@@ -340,7 +340,7 @@ function loadPoparticle () {
             	<img src="${articleData[i].img}" class="img-thumbnail">
             </div>
             <div class="col-lg-7 no_left_pad col-md-7 col-sm-7 col-xs-7">
-            	<a href="#">${articleData[i].heading}</a>
+            	<a href="/category/${articleData[i].category}">${articleData[i].heading}</a>
             </div>
             <div class="clearfix"></div>`;
                 }
