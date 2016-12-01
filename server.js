@@ -320,55 +320,43 @@ Etiam eu cursus lectus. In ultrice s leo sed leo bibendum eu interdum urna luctu
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
                       <article>
-                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                        <a href="http://www.jaisuntourism.com/" target="_blank"><img src="images/jaisun.jpg" class="img-responsive"></a>
                       </article>  
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
                       <article>
-                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                        <a href="http://www.jpmasala.com/" target="_blank"><img src="images/jp.jpg" class="img-responsive"></a>
                       </article>  
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
                       <article>
-                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                        <a href="http://www.kovaimillstores.com/" target="_blank"><img src="images/kovai-mills.jpg" class="img-responsive"></a>
                       </article>  
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
                       <article>
-                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                        <a href="http://www.bombaykulfi.com/" target="_blank"><img src="images/kulfi.jpg" class="img-responsive"></a>
                       </article>  
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
                       <article>
-                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                        <a href="http://www.naturefoodindustries.com/" target="_blank"><img src="images/nfi.jpg" class="img-responsive"></a>
                       </article>  
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
                       <article>
-                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                        <a href="http://www.dmarccbe.com/" target="_blank"><img src="images/dmarc.jpg" class="img-responsive"></a>
                       </article>  
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
                       <article>
-                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
-                      </article>  
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
-                      <article>
-                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
-                      </article>  
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
-                      <article>
-                        <a href="#"><img src="images/blog.jpg" class="img-responsive"></a>
+                        <a href="http://www.alerio.in/" target="_blank"><img src="images/alero.jpg" class="img-responsive"></a>
                       </article>  
                 </div>
 
