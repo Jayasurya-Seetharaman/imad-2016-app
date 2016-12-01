@@ -898,6 +898,10 @@ app.get('/images/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', req.params.fileName));
 });
 
+app.get('/images/django.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'django.jpg'));
+});
+
 //about-profile
 app.get('/about/profile', function (req, res) {
 	res.send(createProfile());
