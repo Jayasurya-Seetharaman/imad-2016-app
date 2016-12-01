@@ -942,6 +942,9 @@ app.get('/images/android.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'android.jpg'));
 });
 
+app.get('/images/profile.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'profile.jpg'));
+});
 
 
 //about-profile
