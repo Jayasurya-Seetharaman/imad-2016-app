@@ -922,6 +922,9 @@ app.get('/images/asp.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'asp.jpg'));
 });
 
+app.get('/images/python.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'python.jpg'));
+});
 
 //about-profile
 app.get('/about/profile', function (req, res) {
