@@ -249,7 +249,7 @@ function relArticles () {
 				  content += "</div>";
                 articles.innerHTML = content;
             } else {
-                articles.innerHTML('Oops! Could not load all articles!')
+                articles.innerHTML('Oops! Could not load all articles!');
             }
         }
     };
@@ -305,7 +305,7 @@ function loadFooTags () {
             <ul>`;
                 var articleData = JSON.parse(this.responseText);
                 for (var i=0; i< articleData.length; i++) {
-                    content += `<li class="footer_tag_li"><a href="/category/${articleData[i].category}">${articleData[i].category}</a></li>`;
+                    content += `<li class="footer_tag_li"><a href="/articles/${articleData[i].title}/${articleData[i].category}">${articleData[i].category}</a></li>`;
                 }
 				content += `</ul></div>`;
                 articles.innerHTML = content;
