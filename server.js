@@ -721,7 +721,7 @@ body{
             <h3 class="title no_top_margin">About Me</h3>
                 
             
-                <img src="/articles/images/two.jpg" class="img-responsive">
+                <img src="images/jayasurya.jpg" class="img-responsive">
             <div class="abt_me">
             <p>Morbi nec aliquam augue. Vestibulum molestie aliquet sem non rhoncus. Ut hendrerit, magna a vulputate dignissim, orci lorem consectetur eros, eget tempus ligula sem ac tellus</p>
             </div>
