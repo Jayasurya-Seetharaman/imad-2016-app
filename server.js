@@ -462,7 +462,7 @@ Etiam eu cursus lectus. In ultrice s leo sed leo bibendum eu interdum urna luctu
 <!--Side menu starts here-->
 <div class="menu">
 <div align="center" class="pad-top-bot">
-    <img src="images/profile.jpg" class="img-circle">
+    <img src="images/profile.jpg" class="img-circle" style="height:160px;width:160px;">
     <p style="padding-top:10px;padding-bottom:10px;">Jayasurya Seetharaman</p>
     <p style="border-bottom:1px solid #1ab5d3;border-bottom-width: thin;width: 40%;"></p>
 </div>
