@@ -38,6 +38,11 @@ app.get('/test', function (req, res) {
    });
 });
 
+//Func for profile-blog
+function createBlog(){
+    var blog = ``;
+    return blog;
+}
 
 //Func for Portfolio
 function createProfile (){
