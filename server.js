@@ -902,6 +902,10 @@ app.get('/images/django.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'django.jpg'));
 });
 
+app.get('/images/flask.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'flask.jpg'));
+});
+
 //about-profile
 app.get('/about/profile', function (req, res) {
 	res.send(createProfile());
