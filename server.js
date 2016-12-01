@@ -926,6 +926,11 @@ app.get('/images/nodejs.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'nodejs.jpg'));
 });
 
+app.get('/images/css.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'css.jpg'));
+});
+
+
 //about-profile
 app.get('/about/profile', function (req, res) {
 	res.send(createProfile());
