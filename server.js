@@ -914,6 +914,10 @@ app.get('/images/express.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/images', 'express.jpg'));
 });
 
+app.get('/images/php.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/images', 'php.jpg'));
+});
+
 
 //about-profile
 app.get('/about/profile', function (req, res) {
