@@ -95,9 +95,9 @@ $(document).ready(function(){
                 <p>Hi, I'm doing my Msc.Software Systems.I'm interesting in Web Developing and I've bit of knowledge too.<br>
 I'd a 6months Internship for my previous semester.So the projects I've worked during my internship has been displayed in the porrtfolio with the company knwoledge.</p>
 				<div class="home-social">
-                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>                
+                    <a href=""https://www.linkedin.com/in/jayasurya-s-9a39a789?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/s_jayasurya" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://github.com/Jayasurya-Seetharaman/imad-2016-app/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>                
                 </div>
 
              </div>
@@ -529,7 +529,7 @@ body{
             	<div class="info-social">
                 	<a href="https://www.linkedin.com/in/jayasurya-s-9a39a789?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     <a href="/about/profile"><i class="fa fa-user" aria-hidden="true" title="View Profile"></i></a>
-                    <a href="https://twitter.com/s_jayasurya"><i class="fa fa-twitter" aria-hidden="true"></i>
+                    <a href="https://twitter.com/s_jayasurya" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
 </a>
     </div>
 </div>
@@ -758,7 +758,7 @@ body{
             	<div class="info-social">
                 	<a href="https://www.linkedin.com/in/jayasurya-s-9a39a789?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     <a href="/about/profile"><i class="fa fa-user" aria-hidden="true" title="View Profile"></i></a>
-                    <a href="https://twitter.com/s_jayasurya"><i class="fa fa-twitter" aria-hidden="true"></i>
+                    <a href="https://twitter.com/s_jayasurya" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
 </a>
     </div>
 </div>
