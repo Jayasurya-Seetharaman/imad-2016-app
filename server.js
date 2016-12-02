@@ -90,10 +90,10 @@ $(document).ready(function(){
               <div align="center" class="pad-top-bot">
                 <img src="images/jayasurya.jpg" style="height:200px;width:200px;border-radius:100px;border-width:thick;border:5px solid #999;">
                 <h2 style="padding-top:10px;padding-bottom:10px;">I'M <font style="color:#1ab5d3;">JAYASURYA SEETHARAMAN</font></h2>
-                <h4>Hello. I'm a Developer</h4>
+                <h4>Hello. I'm a Student</h4>
                 <p style="border-bottom:1px solid #FFF;border-bottom-width: thick;width: 20%;"></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit <br>
-Etiam eu cursus lectus. In ultrice s leo sed leo bibendum eu interdum urna luctus.</p>
+                <p>Hi, I'm doing my Msc.Software Systems<br>
+I'm interesting in Web Developing and I've bit of knowledge too.I'd a 6months Internship for my previous semester.So the projects I've worked during my internship has been displayed in the porrtfolio with the company knwoledge.</p>
 				<div class="home-social">
                     <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
