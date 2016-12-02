@@ -434,18 +434,6 @@ function createCategory (){
 <!--Css-->
 <link rel="stylesheet" href="css/style.css">
 
-<!-- Important Owl stylesheet -->
-<link rel="stylesheet" href="css/owl.carousel.css">
- 
-<!-- Default Theme -->
-<link rel="stylesheet" href="css/owl.theme.css">
- 
-<!--  jQuery 1.7+  -->
-<script src="js/jquery-1.9.1.min.js"></script>
- 
-<!-- Include js plugin -->
-<script src="js/owl.carousel.js"></script>
-
 <!--Font_awesome CDN-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -485,7 +473,8 @@ body{
             
                 <img src="images/jayasurya.jpg" class="img-responsive">
             <div class="abt_me">
-            <p>Morbi nec aliquam augue. Vestibulum molestie aliquet sem non rhoncus. Ut hendrerit, magna a vulputate dignissim, orci lorem consectetur eros, eget tempus ligula sem ac tellus</p>
+            <h3>Jayasurya</h3>
+            <p class="btn btn-primary"><a href="/about/profile" style="color:#FFF !important;">Click here</a></p>
             </div>
             <!-- Popular Posts Starts Here-->
             	
@@ -711,7 +700,8 @@ body{
             
                 <img src="images/jayasurya.jpg" class="img-responsive">
             <div class="abt_me">
-            <p>Morbi nec aliquam augue. Vestibulum molestie aliquet sem non rhoncus. Ut hendrerit, magna a vulputate dignissim, orci lorem consectetur eros, eget tempus ligula sem ac tellus</p>
+            <h3>Jayasurya</h3>
+            <p class="btn btn-primary"><a href="/about/profile" style="color:#FFF !important;">Click here</a></p>
             </div>
             
             <!-- Popular Posts Starts Here-->
