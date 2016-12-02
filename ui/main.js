@@ -6,10 +6,10 @@ function loadLoginForm () {
         <h3>Login/Register</h3>
 		<div clss="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<div class="form-group">
-        <input type="text" class="form-control" id="username" placeholder="Username" />
+        <input type="text" class="form-control" id="username" placeholder="Username" required />
 		</div>
 		<div class="form-group">
-        <input type="password" class="form-control" id="password" placeholder="Password" />
+        <input type="password" class="form-control" id="password" placeholder="Password" required />
 		</div>
         
         <input type="submit" class="btn btn-success" id="login_btn" value="Login" />
