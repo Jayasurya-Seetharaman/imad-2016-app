@@ -254,9 +254,11 @@
 
 .blog-bg article .post {
     padding: 20px 10px;
-	background-color:#FFF;
-	border: 1px solid #ebf0e6;
-	margin-bottom:15px;
+    background-color: #FFF;
+    border: 1px solid #ebf0e6;
+    margin-bottom: 15px;
+    height: 200px;
+    box-sizing: content-box;
 }
 
 .blog-bg article .post h4 a {
