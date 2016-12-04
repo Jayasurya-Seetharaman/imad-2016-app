@@ -388,7 +388,7 @@ function loadCategory () {
 				
 			</div>
             
-            <div class="col-lg-offset-0 col-lg-4 col-lg-offset-4 col-md-offset-0 col-md-4 col-md-offset-4 col-sm-offset-0 col-sm-4 col-sm-offset-4 col-xs-offset-2 col-xs-8 col-xs-offset-2">
+            <div align="center">
             	<p class="category"><a href="/articles/${articleData[i].title}/${articleData[i].category}" class="link">${articleData[i].category}</a></p>
             </div>
             
