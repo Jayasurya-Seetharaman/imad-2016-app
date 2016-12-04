@@ -491,7 +491,7 @@ loadFooTags();
 loadPoparticle();
 
 //loadCategory
-loadCategory();
+//loadCategory();
 
 //latestBlog
 latestBlog();
