@@ -8,12 +8,13 @@ var session = require('express-session');
 
 
 var config = {
-    user: 'jayasurya-seetharaman',
-    database: 'jayasurya-seetharaman',
+    user: 'jayasuryas06',
+    database: 'jayasuryas06',
     host: 'db.imad.hasura-app.io',
     port: '5432',
-    password: 'db-jayasurya-seetharaman-34291'
+    password: 'db-jayasuryas06-8364'
 };
+  
 
 var app = express();
 app.use(morgan('combined'));
@@ -68,6 +69,10 @@ $(document).ready(function(){
     $("#menu").click(function(){
         $(".menu").toggle();
     });
+
+    $(".other").click(function(){
+        $(".menu").hide();
+    });
 });
 </script>
 
@@ -78,7 +83,7 @@ $(document).ready(function(){
 
 <!--Mobile header-->
 <section class="header">
-<p><a href="#" id="menu" style="font-size:16px;color:#FFF;"><i class="fa fa-bars" aria-hidden="true"></i></a><span style="float:right;">Header</span> </p>
+<p><a href="#" id="menu" style="font-size:16px;color:#FFF;"><i class="fa fa-bars" aria-hidden="true"></i></a><span style="padding-left: 10px;">Menu</span> </p>
 
 </section>
 
@@ -87,15 +92,15 @@ $(document).ready(function(){
 	<div class="col-lg-12 col-md-12 col-sm-12 home-bg">
 		<div class="tab-content">
             <div id="home" class="tab-pane fade in active">
-              <div align="center" class="pad-top-bot">
+              <div align="center" class="pad-top-bot other">
                 <img src="images/jayasurya.jpg" style="height:200px;width:200px;border-radius:100px;border-width:thick;border:5px solid #999;">
                 <h2 style="padding-top:10px;padding-bottom:10px;">I'M <font style="color:#1ab5d3;">JAYASURYA SEETHARAMAN</font></h2>
                 <h4>Hello. I'm a Student</h4>
                 <p style="border-bottom:1px solid #FFF;border-bottom-width: thick;width: 20%;"></p>
-                <p>Hi, I'm doing my Msc.Software Systems.I'm interesting in Web Developing and I've bit of knowledge too.<br>
-I'd a 6months Internship for my previous semester.So the projects I've worked during my internship has been displayed in the porrtfolio with the company knwoledge.</p>
+                <p>Hi, I'm doing Msc.Software Systems.I've done my six months internship in 123coimbatore.com as a PHP developer and the projects I've worked during my internship has been listed in the portfolio section
+                 with the company knowledge.</p>
 				<div class="home-social">
-                    <a href=""https://www.linkedin.com/in/jayasurya-s-9a39a789?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/jayasurya-s-9a39a789/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     <a href="https://twitter.com/s_jayasurya" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     <a href="https://github.com/Jayasurya-Seetharaman/imad-2016-app/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>                
                 </div>
@@ -103,7 +108,7 @@ I'd a 6months Internship for my previous semester.So the projects I've worked du
              </div>
 
             </div>
-            <div id="profile" class="tab-pane fade">
+            <div id="profile" class="tab-pane fade other">
               
               <div class="profile" align="center">
               <h1>My Profile</h1>
@@ -118,7 +123,7 @@ I'd a 6months Internship for my previous semester.So the projects I've worked du
                         	<td>D.O.B</td><td>:</td><td>06-04-1996</td>
                         </tr>
                         <tr>
-                        	<td>Age</td><td>:</td><td>20</td>
+                        	<td>Age</td><td>:</td><td>21</td>
                         </tr>
                         <tr>
                         	<td>Marital Status</td><td>:</td><td>Unmarried</td>
@@ -130,7 +135,7 @@ I'd a 6months Internship for my previous semester.So the projects I've worked du
                         	<td>Mobile.No</td><td>:</td><td>9894685416</td>
                         </tr>
                         <tr>
-                        	<td>Email</td><td>:</td><td>jayasuryas06@gmail.com</td>
+                        	<td>Email</td><td>:</td><td style="text-transform: lowercase !important;">jayasuryas06@gmail.com</td>
                         </tr>
                         <tr>
                         	<td>Address</td><td>:</td><td>60,Kumaran Nagar, Ondipur,<br>Coimbatore-641 016,<br>Tamilnadu.</td>
@@ -145,7 +150,7 @@ I'd a 6months Internship for my previous semester.So the projects I've worked du
             </div>
             
             <!--Resume starts here-->
-            <div id="resume" class="tab-pane fade resume-bg">
+            <div id="resume" class="tab-pane fade resume-bg other">
             <div class="container-fluid">
               <h2 class="resume-head">Resume - Personal Info</h2>
              <div align="center"> <p style="border-bottom:1px solid #1ab5d3;width:10%;"></p></div>
@@ -173,7 +178,7 @@ I'd a 6months Internship for my previous semester.So the projects I've worked du
                 </div>
                 
                 <h4>MSC.SOFTWARE SYSTEMS<span class="year"><strong>IV Year in Process</strong></span></h4>
-                <p style="border-bottom:1px solid #1ab5d3;"></p>
+                <p style="position: relative; padding-top: 10px;border-bottom: 1px solid #1ab5d3;"></p>
                 <h5>Name of Institution</h5>
                 <div class="schl">
                     <h4>Sri krsihna Arts and Science College</h4>
@@ -184,19 +189,19 @@ I'd a 6months Internship for my previous semester.So the projects I've worked du
                 <p style="border-bottom:1px solid #1ab5d3;border-bottom-width:thick;width:10%;"></p>
                 
                 <h4>WIPRO TECHNOLOGIES<span class="year"><strong>Mar / 2015</strong></span></h4>
-                <p style="border-bottom:1px solid #1ab5d3;"></p>
+                <p style="position: relative; padding-top: 10px;border-bottom: 1px solid #1ab5d3;"></p>
                 <div class="cmpny">
                     <h4>Undergone 1 day of Industrial Visit at WIPRO TECHNOLOGIES in <i>Bangalore</i> on 04.03.2015</h4>
                 </div>
                 
                 <h4>REFINEMENT SOFTWARE SOLUTIONS<span class="year"><strong>May / 2015</strong></span></h4>
-                <p style="border-bottom:1px solid #1ab5d3;"></p>
+                <p style="position: relative; padding-top: 10px;border-bottom: 1px solid #1ab5d3;"></p>
                 <div class="cmpny">
                     <h4>Undergone 15 days of In-plant Training at REFINEMENT SOFTWARE SOLUTIONS in <i>Coimbatore</i> from 15.05.2015 to 30.05.20155</h4>
                 </div>
 
                 <h4>123COIMBATORE.COM<span class="year"><strong> May - Oct , 2016. </strong></span></h4>
-                <p style="border-bottom:1px solid #1ab5d3;"></p>
+                <p style="position: relative; padding-top: 10px;border-bottom: 1px solid #1ab5d3;"></p>
                 <div class="cmpny">
                     <h4>Undergone 6 Months of Internship Training at 123COIMBATORE.COM in <i>Coimbatore</i> from 1.05.2016 to 30.10.2016</h4>
                     <h4>Also I had been working there as a<strong> Php Developer</strong>. List of Projects I have been completed in 
@@ -264,9 +269,9 @@ I'd a 6months Internship for my previous semester.So the projects I've worked du
                 </div>
 
 				<div class="bar clearfix" data-percent="95%">
-                    <div class="bar-title"><span>MSC.SS</span></div>
-                    <div class="bar-bar" style="width: 35%;"></div>
-                    <div class="bar-percent">35%</div>
+                    <div class="bar-title"><span>BOOTSTRAP</span></div>
+                    <div class="bar-bar" style="width: 72%;"></div>
+                    <div class="bar-percent">72%</div>
                 </div>
 
 				<div class="bar clearfix" data-percent="95%">
@@ -316,53 +321,60 @@ I'd a 6months Internship for my previous semester.So the projects I've worked du
             </div>
             <!--Resume ends here-->
             
-            <div id="portfolio" class="tab-pane fade portfolio-bg">
+            <div id="portfolio" class="tab-pane fade portfolio-bg other">
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
-                      <article>
                         <a href="http://www.jaisuntourism.com/" target="_blank"><img src="images/jaisun.jpg" class="img-responsive"></a>
-                      </article>  
+                    <div class="overlay">
+                        <div class="text"><a href="http://www.jaisuntourism.com/" target="_blank">Jaisun Tourism</a></div>
+                    </div>
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
-                      <article>
-                        <a href="http://www.jpmasala.com/" target="_blank"><img src="images/jp.jpg" class="img-responsive"></a>
-                      </article>  
+                        <a href="http://www.jpmasala.com/" target="_blank"><img src="images/jp.jpg" class="img-responsive"></a> 
+                        <div class="overlay">
+                        <div class="text"><a href="http://www.jpmasala.com/" target="_blank">JP Masala</a></div>
+                    </div>
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
-                      <article>
                         <a href="http://www.kovaimillstores.com/" target="_blank"><img src="images/kovai-mills.jpg" class="img-responsive"></a>
-                      </article>  
+                    <div class="overlay">
+                        <div class="text"><a href="http://www.kovaimillstores.com/" target="_blank">Kovai Mill Stores</a></div>
+                    </div>
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
-                      <article>
                         <a href="http://www.bombaykulfi.com/" target="_blank"><img src="images/kulfi.jpg" class="img-responsive"></a>
-                      </article>  
+                    <div class="overlay">
+                        <div class="text"><a href="http://www.bombaykulfi.com/" target="_blank">Bombay Kulfi</a></div>
+                    </div>
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
-                      <article>
                         <a href="http://www.naturefoodindustries.com/" target="_blank"><img src="images/nfi.jpg" class="img-responsive"></a>
-                      </article>  
+                    <div class="overlay">
+                        <div class="text"><a href="http://www.naturefoodindustries.com/" target="_blank">Nature Food Industries</a></div>
+                    </div> 
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
-                      <article>
                         <a href="http://www.dmarccbe.com/" target="_blank"><img src="images/dmarc.jpg" class="img-responsive"></a>
-                      </article>  
+                    <div class="overlay">
+                        <div class="text"><a href="http://www.dmarccbe.com/" target="_blank">DMarc</a></div>
+                    </div> 
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-pad">
-                      <article>
                         <a href="http://www.alerio.in/" target="_blank"><img src="images/alero.jpg" class="img-responsive"></a>
-                      </article>  
+                    <div class="overlay">
+                        <div class="text"><a href="http://www.alerio.in/" target="_blank">Alerio</a></div>
+                    </div> 
                 </div>
 
              </div>
             
-            <div id="blog" class="tab-pane fade blog-bg">
+            <div id="blog" class="tab-pane fade blog-bg other">
 
               	<div id="blog">
               	</div>
@@ -391,7 +403,7 @@ I'd a 6months Internship for my previous semester.So the projects I've worked du
 </ul>
 
 <div class="social">
-    <a href="https://www.linkedin.com/in/jayasurya-s-9a39a789?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/jayasurya-s-9a39a789/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
     <a href="https://twitter.com/s_jayasurya" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
     <a href="https://github.com/Jayasurya-Seetharaman/imad-2016-app/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
 </div>
@@ -436,7 +448,8 @@ function createCategory (){
 
 <!--Font_awesome CDN-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<!-- Menu.css-->
+<link rel="stylesheet" href="css/menu.css">
 <style>
 
 body{
@@ -452,8 +465,33 @@ body{
 <!--Header Starts-->
 <section class="header">
 	<div class="container-fluid">
-		<h1 class="text-center">My Blog</h1>
+		<h1 class="text-center" style="font-size: 25px;color: #555;padding: 10px !important;">MyBlog</h1>
     </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="/">Home</a></li>
+              <li><a class="dropdown" href="/category/Web-Designing">Web Designing</a></li>
+              <li><a href="/category/Web-Developing">Web Developing</a></li>
+              <li><a href="/category/Mobile-App">Mobile Application</a></li>
+              <li><a href="/about/profile">About Me</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/#login_area"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="/#login_area"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
 </section>
 <!--Header Ends -->
 <br>
@@ -474,7 +512,7 @@ body{
                 <img src="images/jayasurya.jpg" class="img-responsive">
             <div class="abt_me">
             <h3>Jayasurya</h3>
-            <p class="btn btn-primary"><a href="/about/profile" style="color:#FFF !important;">Click here</a></p>
+            <p class="btn btn-primary"><a href="/about/profile" style="color:#FFF !important;">About Me</a></p>
             </div>
             <!-- Popular Posts Starts Here-->
             	
@@ -527,7 +565,7 @@ body{
 <div class="info-social">
 	<div align="center">
             	<div class="info-social">
-                	<a href="https://www.linkedin.com/in/jayasurya-s-9a39a789?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                	<a href="https://www.linkedin.com/in/jayasurya-s-9a39a789/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     <a href="/about/profile"><i class="fa fa-user" aria-hidden="true" title="View Profile"></i></a>
                     <a href="https://twitter.com/s_jayasurya" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
 </a>
@@ -595,10 +633,11 @@ function createTemplate (data) {
 <!--Css-->
 <link rel="stylesheet" href="/articles/css/style.css">
 
-
 <!--Font_awesome CDN-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!-- Menu.css-->
+<link rel="stylesheet" href="/articles/css/menu.css">
 <style>
 
 body{
@@ -614,8 +653,33 @@ body{
 <!--Header Starts-->
 <section class="header">
 	<div class="container-fluid">
-		<h1 class="text-center">My Blog</h1>
+		<h1 class="text-center" style="font-size: 25px;color: #555;padding: 10px !important;">MyBlog</h1>
     </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="/">Home</a></li>
+              <li><a class="dropdown" href="/category/Web-Designing">Web Designing</a></li>
+              <li><a href="/category/Web-Developing">Web Developing</a></li>
+              <li><a href="/category/Mobile-App">Mobile Application</a></li>
+              <li><a href="/about/profile">About Me</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/#login_area"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="/#login_area"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
 </section>
 <!--Header Ends -->
 
@@ -701,7 +765,7 @@ body{
                 <img src="images/jayasurya.jpg" class="img-responsive">
             <div class="abt_me">
             <h3>Jayasurya</h3>
-            <p class="btn btn-primary"><a href="/about/profile" style="color:#FFF !important;">Click here</a></p>
+            <p class="btn btn-primary"><a href="/about/profile" style="color:#FFF !important;">About Me</a></p>
             </div>
             
             <!-- Popular Posts Starts Here-->
@@ -756,7 +820,7 @@ body{
 <div class="info-social">
 	<div align="center">
             	<div class="info-social">
-                	<a href="https://www.linkedin.com/in/jayasurya-s-9a39a789?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                	<a href="https://www.linkedin.com/in/jayasurya-s-9a39a789/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     <a href="/about/profile"><i class="fa fa-user" aria-hidden="true" title="View Profile"></i></a>
                     <a href="https://twitter.com/s_jayasurya" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
 </a>
@@ -977,7 +1041,8 @@ app.get('/pop-posts', function (req, res) {
 app.get('/get-articles', function (req, res) {
    // make a select request
    // return a response with the results
-   pool.query('SELECT * FROM article ORDER BY date DESC LIMIT 4', function (err, result) {
+
+    pool.query('SELECT * FROM article ORDER BY date', function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
@@ -1202,7 +1267,7 @@ res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 
 
 
-var port = 8080; // Use 8080 for local development because you might already have apache running on 80
-app.listen(8080, function () {
+var port = 80; // Use 8080 for local development because you might already have apache running on 80
+app.listen(80, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });

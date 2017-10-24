@@ -21,6 +21,13 @@ function loadLoginForm () {
     // Submit username/password to login
     var submit = document.getElementById('login_btn');
     submit.onclick = function () {
+
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        if(username == '' | password == ''){
+                    alert('Please enter the username & password !');
+        }else{
+
         // Create a request object
         var request = new XMLHttpRequest();
         
@@ -53,6 +60,7 @@ function loadLoginForm () {
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
         submit.value = 'Logging in...';
+    }
         
     };
     
@@ -127,9 +135,10 @@ function loadArticles () {
 				
                 for (var i=0; i< articleData.length; i++) {
                    
-				   content += `<div class="col-lg-12 col-md-12 col-sm-12">
-        	<img src="${articleData[i].img}" class="img-responsive">
-           
+				   content += `<div class="col-lg-6 col-md-6 col-sm-12">
+            <a href="/articles/${articleData[i].title}/${articleData[i].category}">
+                   <img src="${articleData[i].img}" class="img-responsive">
+           </a>
            <div class="article">
            <!--Head- Article- Starts-->
             <div align="center">
@@ -196,7 +205,9 @@ function latestArticles () {
                 for (var i=0; i< articleData.length; i++) {
                    
 				   content += `   
-				   <img src="${articleData[i].img}" class="img-responsive img_pad" style="margin-top:-7px !important;">
+                <a href="/articles/${articleData[i].title}/${articleData[i].category}">
+                   <img src="${articleData[i].img}" class="img-responsive img_pad" style="margin-top:-7px !important;">
+                </a>
             	<div align="center">
     	        	<div class="pop_post">
         	        	<div class="pop_content">
@@ -238,8 +249,10 @@ function relArticles () {
                 for (var i=0; i< articleData.length; i++) {
                    
 				   content += ` 				   
-     		    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" align="center">
-				<img src="${articleData[i].img}" class="img-responsive">
+                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" align="center">
+                <a href="/articles/${articleData[i].title}/${articleData[i].category}">
+                <img src="${articleData[i].img}" class="img-responsive">
+                </a>
 				<a href="/articles/${articleData[i].title}/${articleData[i].category}">${articleData[i].heading}</a>
 				</div>
 				   
@@ -337,7 +350,9 @@ function loadPoparticle () {
                 for (var i=0; i< articleData.length; i++) {
                     content += `
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-            	<img src="${articleData[i].img}" class="img-thumbnail">
+            <a href="/articles/${articleData[i].title}/${articleData[i].category}">
+                <img src="${articleData[i].img}" class="img-thumbnail">
+            </a>
             </div>
             <div class="col-lg-7 no_left_pad col-md-7 col-sm-7 col-xs-7">
             	<a href="/articles/${articleData[i].title}/${articleData[i].category}">${articleData[i].heading}</a>
@@ -376,9 +391,10 @@ function loadCategory () {
                 for (var i=0; i< articleData.length; i++) {
                    
 				   content += `
-<div class="col-lg-6 col-md-12 col-sm-12">
-        	<img src="${articleData[i].img}" class="img-responsive">
-           
+            <div class="col-lg-6 col-md-12 col-sm-12">
+            <a href="/articles/${articleData[i].title}/${articleData[i].category}">
+                <img src="${articleData[i].img}" class="img-responsive">
+           </a>
            <div class="article">
            <!--Head- Article- Starts-->
             <div align="center">
@@ -449,7 +465,9 @@ function latestBlog () {
 				  
 				  <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 no-ryt-pad">
                   <article>
-                	<img src="${articleData[i].img}" class="img-responsive">
+                  <a href="/articles/${articleData[i].title}/${articleData[i].category}">
+                    <img src="${articleData[i].img}" class="img-responsive">
+                  </a>
                     <div class="post">
                     <h4><a href="/articles/${articleData[i].title}/${articleData[i].category}">${articleData[i].heading}</a></h4>
                     <p style="color:#1ab5d3;">${articleData[i].category} - Feb,2016.</p>

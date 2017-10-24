@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Web Garbage</title>
+<title>My Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
 <!-- Latest compiled and minified CSS -->
@@ -21,6 +21,8 @@
 <!--Font_awesome CDN-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<!-- Menu.css-->
+<link rel="stylesheet" href="css/menu.css">
 <script type="text/javascript" src="/ui/main.js"></script>
 
 <style>
@@ -38,8 +40,33 @@ body{
 <!--Header Starts-->
 <section class="header">
 	<div class="container-fluid">
-		<h1 class="text-center">Web Garbage</h1>
+		<h1 class="text-center" style="font-size: 25px;color: #555;padding: 10px !important;">MyBlog</h1>
     </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a class="dropdown" href="/category/Web-Designing">Web Designing</a></li>
+              <li><a href="/category/Web-Developing">Web Developing</a></li>
+              <li><a href="/category/Mobile-App">Mobile Application</a></li>
+              <li><a href="/about/profile">About Me</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#login_area"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#login_area"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
 </section>
 <!--Header Ends -->
 <br>
@@ -111,7 +138,7 @@ body{
                 <img src="images/jayasurya.jpg" class="img-responsive">
             <div class="abt_me">
                 <h3>Jayasurya</h3>
-            <p class="btn btn-primary"><a href="/about/profile" style="color:#FFF !important;">Click here</a></p>
+            <p class="btn btn-primary"><a href="/about/profile" style="color:#FFF !important;">About Me</a></p>
             </div>
             
             <!--Login-->
@@ -173,7 +200,7 @@ body{
 <div class="info-social">
 	<div align="center">
             	<div class="info-social">
-                	<a href="https://www.linkedin.com/in/jayasurya-s-9a39a789?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                	<a href="https://www.linkedin.com/in/jayasurya-s-9a39a789/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     <a href="/about/profile"><i class="fa fa-user" aria-hidden="true" title="View Profile"></i></a>
                     <a href="https://twitter.com/s_jayasurya" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
     </div>
